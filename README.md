@@ -4,6 +4,10 @@ CHIRIMEN for Raspberry Pi 3 で WebBluetooth
 
 これは Raspberry Pi 3 上で動作する IoT プラットフォーム「CHIRIMEN for Raspberry Pi 3」で WebBluetooth を使用してライトを制御するサンプルです。USBマイクから音が入るとライトが点灯する、または測距センサで何かが近づいたらライトが点灯する、という動作をさせています。
 
+## ソースコード
+ソフトウェア本体は GitHub 上のリポジトリにあります。  
+[https://github.com/g200kg/chirimen-webbluetooth](https://github.com/g200kg/chirimen-webbluetooth)
+
 ## ライブデモ
 実際に動作するサンプルはここで公開されています。CHIRIMEN for RasPi 3 上で全ての機能を動かすには下の部品を揃える必要がありますが、もし PLAYBULB (sphere または candle)をお持ちなら(BLE対応の)ノートPCからでもマイク周りの動作を試す事ができます。  
 
