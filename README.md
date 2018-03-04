@@ -9,7 +9,7 @@ CHIRIMEN for Raspberry Pi 3 で WebBluetooth
 [https://github.com/g200kg/chirimen-webbluetooth](https://github.com/g200kg/chirimen-webbluetooth)
 
 ## ライブデモ
-実際に動作するサンプルはここで公開されています。CHIRIMEN for RasPi 3 上で全ての機能を動かすには下の部品を揃える必要がありますが、もし PLAYBULB (sphere または candle)をお持ちなら(BLE対応の)ノートPCからでもマイク周りの動作を試す事ができます。  
+オンラインで実際に動作するサンプルは下のリンクで公開されています。CHIRIMEN for RasPi 3 上で全ての機能を動かすには下の部品を揃える必要がありますが、もし PLAYBULB (sphere または candle)をお持ちなら(BLE対応の)ノートPCからでもマイク周りの動作を試す事ができます。  
 
 [ライブデモ](https://g200kg.github.io/chirimen-webbluetooth/)
 
