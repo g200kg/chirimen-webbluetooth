@@ -57,7 +57,7 @@ button{
 <script>
 const bledevices={
   "PLAYBULB sphere":{serviceId:0xFF0F},
-  "PLAYBULB candle":{serviceId:0xFF02},
+  "PLAYBULB CANDLE":{serviceId:0xFF02},
 };
 const COLOR_UUID = 0xFFFC;
 
@@ -108,6 +108,7 @@ class Playbulb {
 
 class Microphone {
   constructor(){
+    console.log("constructor Mic")
     this.audioctx=null;
     this.audioctx=new AudioContext();
     this.analyser=new AnalyserNode(this.audioctx,{smoothingTimeConstant:0.5});
@@ -126,6 +127,7 @@ class Microphone {
   }
   toggle(){
     if(this.run<0){
+      this.audioctx.resume();
       document.getElementById("micbtn").innerHTML="On";
       this.run=1;
     }
