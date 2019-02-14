@@ -42,7 +42,7 @@ CHIRIMEN for Raspberry Pi 3 で WebBluetooth
 
 ## サンプルプログラムの起動
 
-実際に Web Bluetooth を使うサンプルプログラムは、https://www.g200kg.com/demo/chirimen/webbluetooth/ に置いてあります。ブラウザでアクセスすると次の画面になります。この時、マイクの使用許可のダイアログがでたら[許可]を選択してください。  
+実際に Web Bluetooth を使うサンプルプログラムは、https://g200kg.github.io/chirimen-webbluetooth/ に置いてあります。ブラウザでアクセスすると次の画面になります。この時、マイクの使用許可のダイアログがでたら[許可]を選択してください。  
 
 ![images/bledemo2.png](https://g200kg.github.io/chirimen-webbluetooth/images/bledemo2.png)
 
@@ -143,6 +143,7 @@ class Microphone {
   }
   toggle(){
     if(this.run<0){
+      this.audioctx.resume();
       document.getElementById("micbtn").innerHTML="On";
       this.run=1;
     }
@@ -219,7 +220,7 @@ playbulb.setColor(r*255,g*255,b*255);
 ```
 const bledevices={
   "PLAYBULB sphere":{serviceId:0xFF0F},
-  "PLAYBULB candle":{serviceId:0xFF02},
+  "PLAYBULB CANDLE":{serviceId:0xFF02},
 };
 
 const COLOR_UUID = 0xFFFC;
@@ -235,6 +236,6 @@ const COLOR_UUID = 0xFFFC;
 [CHIRIMEN for Raspberry Pi 3 Hello World](https://qiita.com/tadfmac/items/82817476615fdc7394b3)  
 [CHIRIMEN for Raspberry Pi 3 チュートリアル 3. I2C　応用編（その他のセンサー）](https://qiita.com/tadfmac/items/b17d8c6a35b31c495a36)  
 [codelabs : Control a PLAYBULB candle with Web Bluetooth](https://codelabs.developers.google.com/codelabs/candle-bluetooth/#0)  
-[W3C : Media Capture and Streams](https://www.g200kg.com/demo/chirimen/webbluetooth/README.md)  
+[W3C : Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)  
 [W3C : Web Audio API](https://webaudio.github.io/web-audio-api/)  
 [Bluetooth SIG : メンバー向け 16 ビット UUID](https://www.bluetooth.com/ja-jp/specifications/assigned-numbers/16-bit-uuids-for-members)  

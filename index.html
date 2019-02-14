@@ -108,7 +108,6 @@ class Playbulb {
 
 class Microphone {
   constructor(){
-    console.log("constructor Mic")
     this.audioctx=null;
     this.audioctx=new AudioContext();
     this.analyser=new AnalyserNode(this.audioctx,{smoothingTimeConstant:0.5});
